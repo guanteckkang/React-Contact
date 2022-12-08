@@ -1,0 +1,41 @@
+.emptydiv {
+  height: 70px;
+}
+.maindiv {
+  width: 95%;
+  display: flow-root;
+}
+.subdiv1 {
+  width: 60%;
+  float: left;
+}
+.subdiv2 {
+  width: 30%;
+  float: right;
+}
+.input1 {
+  display: inline-block !important;
+}
+.grid {
+  margin: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  gap: 20px;
+  justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(3, 250px);
+  }
+}
+@media screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(2, 250px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(1, 250px);
+  }
+}
